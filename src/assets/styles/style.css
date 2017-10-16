@@ -1111,7 +1111,7 @@ input:focus, button:focus {
 .border .btn-success.btn-buy {
     font-size: 18px;
     text-transform: uppercase;
-    background-color: #3F3F3F;
+    background-color: rgb(60, 189, 0);
 }
 
 .border .btn-buy i {
@@ -1120,7 +1120,7 @@ input:focus, button:focus {
 }
 
 .border .btn-success.btn-buy:hover {
-  background-color: #222222;
+  background-color: #239400;
 }
 
 .border:hover {
