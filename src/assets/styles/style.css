@@ -2,6 +2,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#security-seal {
+  
+  position: relative;
+  width: 600px;
+}
 
 #layout{
   padding-bottom: 10px;
@@ -73,7 +78,7 @@ input:focus, button:focus {
 }
 
 .btn.btn-success {
-  background: #D30000;
+  background: rgb(33, 167, 0);
   font-size: 20px;
   color: #fff;
 }
@@ -90,7 +95,7 @@ input:focus, button:focus {
 
 
 .btn.btn-success:hover {
-  background: #910000;
+  background: #008800;
 }
 
 
@@ -2080,7 +2085,6 @@ input:focus, button:focus {
 }
 
 .product-page .col-details .product-buy-content {
-  max-width: 210px;
   width: 100%;
 }
 @media (max-width: 991px) {

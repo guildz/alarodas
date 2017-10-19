@@ -18,7 +18,8 @@
 
             <div class="row row-first">
                 <div class="col-image col-md-6 col-sm-12">
-                    <product-gallery [sku]="sku"></product-gallery>
+                    <product-gallery [sku]="sku"> </product-gallery>
+                    <img alt="Selos Qualidade" border=10 src="/assets/images/selo-nf-novo.jpg" title="Selos Qualidade" style="position: relative;left: 60px; padding: 10px;">
                 </div>
                 <div class="col-details col-md-6 col-sm-12">
                     <div class="product-name col-md-12">
@@ -40,6 +41,7 @@
 
                     <div class="product-short-description col-md-12">
                         <p [innerHTML]="product.briefDescription"></p>
+                        <p><font color="FF0000">*Para compra de rodas vendemos somente o jogo com 4 rodas no mínimo</font></p>
                     </div>
                     
                     <div class="product-variation col-md-12">
@@ -78,9 +80,9 @@
                                 </diV>
                             </div>
 
-                            <div class="product-price-box" *ngIf="sku.promotionalPrice == 0 && sku.price > 0">
-                                <diV class="col-md-6 pull-right text-center">
-                                    <span class="regular-price">
+                            <div class="product-price-box" *ngIf="sku.promotionalPrice == 0 && sku.price > 0"  style=" height: 90px; padding-right: 0px">
+                                <diV class="pull-right text-center">
+                                    <span class="regular-price pull-right">
                                     <span class="price-label"></span>
                                     <span class="price">{{sku.price |  currencyFormat}}</span>
                                     </span>

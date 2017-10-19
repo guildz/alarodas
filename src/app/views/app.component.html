@@ -131,7 +131,7 @@
         </div>   
 </div> 
 <div id="container-border"></div>
-<div class="container-banner" *ngIf="getStore()">
+<div class="container" *ngIf="getStore()">
     <router-outlet></router-outlet>
 </div>
 <footer id="footer" *ngIf="getStore()">
@@ -192,24 +192,40 @@
         <div class="container">
             <div class="row">
                 <!-- Box SSL -->
-                <div class="col-md-2 col-sm-12">
+                <div class="col-md-2 col-sm-12" style=" width: 600px;">
                     <div id="security-seal">
                         <h3 class="title">Certificados</h3>
                         <ul class="list-inline">
+                            
+                            <a href="http://raspar.com.br/" target="_blank" title="Selo Raspar">
+                                <img alt="Selo Raspar" border=0 src="/assets/images/selo-raspar.png" title="Selo Raspar">
+                            </a>
+                            <img alt="Abcomm" border=0 src="/assets/images/selo-abcomm.png" title="Abcomm">
+                            <img alt="Site Seguro" border=0 src="/assets/images/selo-site-seguro.png" title="Site Seguro">
+                            <img alt="Stone" border=0 src="/assets/images/selo-stone.png" title="Stone">
                             <span id="ss_img_wrapper_115-55_image_en">
                                 <a href="http://www.alphassl.com/ssl-certificates/wildcard-ssl.html" target="_blank" title="SSL Certificates">
                                     <img alt="Wildcard SSL Certificates" border=0 id="ss_img" src="//seal.alphassl.com/SiteSeal/images/alpha_noscript_115-55_en.gif" title="SSL Certificate">
                                 </a>
                             </span>
                         </ul>
+                  
                     </div>
+               
                 </div>
+
+        
+                
+                
+      
+
+
                 <!-- CreditCard Brands -->
                 <div *ngIf="hasPagSeguro()" class="col-md-2 col-sm-12 text-center">
                     <img src="https://stc.pagseguro.uol.com.br/public/img/banners/seguranca/seguranca_125x125.gif" alt="Banner PagSeguro" title="Compre com pagSeguro e fique sossegado">
                 </div>
-                <div class="col-md-8 col-sm-12">
-                        <div *ngIf="hasMundipagg()" class="col-md-6 col-sm-12">
+                <div class="col-md-8 col-sm-12" style="width: 550px; padding:0px;">
+                        <div *ngIf="hasMundipagg()" class="col-md-6 col-sm-12" style="width: 500px;">
                             <div id="payment-flags">
                                 <h3 class="title">Pague com</h3>
                                 <ul class="list-inline">
@@ -233,9 +249,15 @@
                             </div>
                         </div>
                 </div>
+         
             </div>
+      
+      
+
         </div>
     </div>
+
+
     <!-- /Footer secundário -->
 
     <div id="copyright">
