@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CustomPaintFilterPipe } from "app/pipes/custom-paint-filter.pipe";
+import { CustomPaintFilterPipe } from "./custom-paint-filter.pipe";
 
 @NgModule({
     declarations: [ CustomPaintFilterPipe ],
