@@ -146,10 +146,9 @@
                 <div class="list-footer col-xs-6 col-md-5 footer-institutional">
                     <h3 class="title">Institucional</h3>
                     <ul>
-                            <li><span><a href="http://www.alarodas.com.br" target="_blank">Página Ala Rodas</a></span></li>
-                            <li><span><a href="/contato">Contato</a></span></li>
-                            <li><span><a href="institucional/ad10cdec-7dbf-11e7-bf87-fce4fe302ac2/quem-somos">Quem Somos</a></span></li>   
-                            <li><span><a href="/institucional/a2377726-93d9-11e7-a4ba-7f84de2f6d91/regras-de-frete-gratis">Regras do Frete Grátis</a></span></li>  
+                        <li *ngFor="let institutional of institutionals">
+                            <a [routerLink]="[getInstitutionalUrl(institutional)]" [attr.title]="institutional.title">{{institutional.title}}</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-xs-12 visible-xs visible-sm">
