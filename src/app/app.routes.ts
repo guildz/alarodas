@@ -16,10 +16,12 @@ import { SearchComponent } from './components/search/search.component';
 import { ShowCaseComponent } from './components/showcase/showcase.component';
 import { SignUpComponent } from "app/components/signup/signup.component";
 import { RedirectComponent } from "app/components/redirect/redirect.component";
+import { Error500Component } from 'app/components/500/500.component';
 
 const appRoutes: Routes = [
     { path: '', component: ShowCaseComponent },
     { path: '404', component: NotFoundComponent },
+    { path: 'erro-500', component: Error500Component },
     { path: 'buscar', component: SearchComponent },
     { path: 'carrinho', component: CartComponent },
     { path: 'categoria/:id', component: SearchComponent },
@@ -31,6 +33,7 @@ const appRoutes: Routes = [
     { path: 'checkout/concluido/:id', component: CheckoutFinishComponent },
     { path: 'compare', component: CompareComponent },
     { path: 'corespersonalizadas', loadChildren: 'app/components/custom-paint/custom-paint.module#CustomPaintModule' },
+    { path: 'cores-personalizadas', loadChildren: 'app/components/custom-paint/custom-paint.module#CustomPaintModule' },
     { path: 'grupo/:id/:nicename', component: SearchComponent    },
     { path: 'buscar', component: SearchComponent },
     { path: 'institucional/:id', component: InstitutionalComponent },
